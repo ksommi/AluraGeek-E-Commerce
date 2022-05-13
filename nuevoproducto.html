@@ -30,36 +30,23 @@
           ><i class="fa-solid fa-magnifying-glass"></i
         ></a>
       </nav>
-      <div id="promocion">
-        <div class="back paddings">
-          <h1>Marzo promocional</h1>
-          <p>Productos seleccionados hasta un 40% de descuento</p>
-          <a href="productos.html" id="prom-button">Ver productos</a>
-        </div>
-      </div>
     </header>
-    <main>
-      <div class="productos paddings">
-        <div>
-          <h2>Star Wars</h2>
-          <a href="">Ver todo ➜</a>
+    <main class="container paddings">
+      <form action="" class="form-agregar-producto">
+        <h1>Agregar nuevo producto</h1>
+        <div class="form-add-image">
+          <div class="add-img-product">
+            <i class="fa-solid fa-file-image"></i>
+            <p>Arrastre una imagen aquí para el producto</p>
+          </div>
+          <h4>O</h4>
+          <button class="buscar-btn">Buscar archivo..</button>
         </div>
-        <ul class="ul-productos"></ul>
-      </div>
-      <div class="productos paddings">
-        <div>
-          <h2>Consolas</h2>
-          <a href="">Ver todo ➜</a>
-        </div>
-        <ul class="ul-productos"></ul>
-      </div>
-      <div class="productos paddings">
-        <div>
-          <h2>Diversos</h2>
-          <a href="">Ver todo ➜</a>
-        </div>
-        <ul class="ul-productos"></ul>
-      </div>
+        <input type="text" placeholder="Nombre del producto" />
+        <input type="number" placeholder="Precio del producto" />
+        <textarea name="description" id="" cols="30" rows="10"></textarea>
+        <button class="form-button agregar">Agregar producto</button>
+      </form>
     </main>
     <footer>
       <div class="paddings footer">

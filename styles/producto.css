@@ -1,0 +1,30 @@
+.producto {
+    display: flex;
+    margin: 20px auto;
+}
+
+.producto img {
+    margin-right: 20px;
+}
+
+.product-general {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.product-image-big {
+    width: 50%;
+}
+
+.product-title-big {
+    font-size: 52px;
+}
+
+.product-price-big {
+    font-size: 16px;
+}
+
+.product-description-big {
+    font-size: 16px;
+}

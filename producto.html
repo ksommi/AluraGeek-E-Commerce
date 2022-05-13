@@ -7,6 +7,7 @@
     <title>AluraGeek</title>
     <link href="styles/style.css" rel="stylesheet" type="text/css" />
     <link href="styles/responsive.css" rel="stylesheet" type="text/css" />
+    <link href="styles/producto.css" rel="stylesheet" type="text/css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -30,34 +31,27 @@
           ><i class="fa-solid fa-magnifying-glass"></i
         ></a>
       </nav>
-      <div id="promocion">
-        <div class="back paddings">
-          <h1>Marzo promocional</h1>
-          <p>Productos seleccionados hasta un 40% de descuento</p>
-          <a href="productos.html" id="prom-button">Ver productos</a>
-        </div>
-      </div>
     </header>
     <main>
-      <div class="productos paddings">
-        <div>
-          <h2>Star Wars</h2>
-          <a href="">Ver todo ➜</a>
+      <div class="producto paddings">
+        <img
+          class="product-image-big"
+          src="images/Productos/Star Wars/image0.svg"
+          alt=""
+        />
+        <div class="product-general">
+          <h1 class="product-title-big">Producto XYZ</h1>
+          <p class="product-price-big">precio</p>
+          <p class="product-description-big">
+            descripcion Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Explicabo recusandae libero optio ipsum accusantium possimus,
+            doloribus labore dolore enim incidunt fuga deleniti quam amet id,
+            dolor, atque consectetur in ipsa.
+          </p>
         </div>
-        <ul class="ul-productos"></ul>
       </div>
       <div class="productos paddings">
-        <div>
-          <h2>Consolas</h2>
-          <a href="">Ver todo ➜</a>
-        </div>
-        <ul class="ul-productos"></ul>
-      </div>
-      <div class="productos paddings">
-        <div>
-          <h2>Diversos</h2>
-          <a href="">Ver todo ➜</a>
-        </div>
+        <h2>Productos similares</h2>
         <ul class="ul-productos"></ul>
       </div>
     </main>
@@ -109,6 +103,5 @@
     </footer>
   </body>
   <script src="js/funciones.js"></script>
-  <script src="js/index.js"></script>
   <script src="js/general.js"></script>
 </html>
