@@ -10,23 +10,32 @@ buttonLogin.addEventListener("click", (event) => {
 });
 
 function existUsers(user) {
-  usuarios.forEach((element, index) => {
-    if (usuarios[index].user.includes(user)) {
-    }
-  });
-}
-
-/*function compareUsers(user) {
+  user = user.toLowerCase();
   var password = inputPassword.value;
-  usuarios.forEach((element, index) => {
-    if (element.user === user) {
-      if (element.password === password) {
-        console.log("contraseña correcta");
+  function findUser() {
+    var index = usuarios.findIndex((elemento) => elemento.user === user);
+    return index;
+  }
+  if (user === "" || password === "") {
+    errorLogin.classList.add("invalid");
+    errorLogin.innerHTML = "No se deben dejar campos vacios";
+  } else {
+    if (findUser() >= 0) {
+      var indexUser = findUser();
+      if (usuarios[indexUser].password === password) {
+        window.location.href = "/index.html";
       } else {
         errorLogin.classList.add("invalid");
-        errorLogin.innerHTML = "La contraseña no coincide con el e-mail";
+        errorLogin.innerHTML = "Los datos son incorrectos";
+      }
+    } else {
+      if (!/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(user)) {
+        errorLogin.classList.add("invalid");
+        errorLogin.innerHTML = "El formato de e-mail no es valido";
+      } else {
+        errorLogin.classList.add("invalid");
+        errorLogin.innerHTML = "El e-mail no se encuentra registrado";
       }
     }
-  });
+  }
 }
-*/
